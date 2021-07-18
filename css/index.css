@@ -1,0 +1,437 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: 'Roboto', 'Noto Sans';
+}
+
+a{
+    text-decoration: none;
+}
+
+.color-w{
+    color: white;
+}
+
+.color-r{
+    color: #650300;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.h2-font-size{
+    font-size: 48px;
+    line-height: 1.45;
+}
+
+.part-padding{
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.menu{
+    background: #AA0601;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.menu h1{
+    padding-left: 88px;
+}
+
+.menu h1 a{
+    width: 80px;
+    height: 49px;
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu ul{
+    font-size: 20px;
+    line-height: 1.45;
+    width: 492px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 88px;
+}
+
+.menu ul li a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.banner{
+    height: 840px;
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true) no-repeat;
+    font-size: 36px;
+    line-height: 1.45;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 405px;
+}
+
+.banner p:nth-child(2){
+    font-size: 64px;
+}
+
+.promise{
+    background: #FBF2F2;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.promise ul li p{
+    font-size: 24px;
+    line-height: 1.45;
+}
+
+.promise ul{
+    display: flex;
+    margin-top: 48px;
+}
+
+.promise ul li{
+    width: 255px;
+    text-align: center;
+}
+
+.promise ul li img{
+    width: 88px;
+    height: 88px;
+}
+
+.promise ul li p:nth-child(2){
+    margin-top: 27px;
+    margin-bottom: 8px;
+}
+
+.promise ul li p:nth-child(3){
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: black;
+}
+
+.classic{
+    text-align: center;
+}
+
+.classic h2{
+    margin-bottom: 40px;
+}
+
+.classic ul li{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.classic ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.classic ul li:nth-of-type(2) a{
+    flex-direction: row-reverse;
+    margin: 32px 0;
+}
+
+.classic ul li a img{
+    width: 635px;
+    height: 320px;
+}
+
+.classic ul li a p{
+    font-size: 48px;
+    line-height: 1.3;
+    color: #AA0601;
+    font-style: italic;
+    margin: 0 35px;
+}
+
+.classic ul li:nth-child(2) a p::before{
+    content: '';
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    margin-right: 8px;
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-sun.svg) no-repeat;
+}
+
+.classic ul li:nth-child(3) a p::before{
+    content: '';
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    margin-right: 8px;
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-thunder.svg) no-repeat;
+}
+
+.co-branding{
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true) no-repeat center center;
+    text-align: center;
+}
+
+.brand{
+    width: 1110px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+
+.doubleA{
+    height:455px;
+    width: 540px;
+    background:url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true") no-repeat;
+    opacity: 0.5;
+}
+
+.youth{
+    height: 455px;
+    width: 540px;
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true0") no-repeat;
+    opacity: 0.5;
+}
+
+.co-branding-content{
+    font-size: 72px;
+    line-height: 1.3;
+    padding-top: 181px;
+    margin-top: 40px;
+    opacity: 1;
+}
+
+.recommend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customer-recommend ul{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    width: 1144px;
+}
+
+.customer-recommend ul li{
+    width: 255px;
+    line-height: 1.5;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px #00000029;
+}
+
+.recommend-content p:nth-child(2){
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.customer-recommend ul li img{
+    width: 255px;
+    height: 255px;
+}
+
+.date{
+    font-size: 14px;
+    color: gray;
+    font-weight: normal;
+    margin-top: 52px;
+}
+
+
+.contact-our{
+    background: #FBF2F2;
+}
+
+.contact-list{
+    width: 730px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-list h2{
+    text-align: center;
+}
+
+.contact-list p:first-of-type{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 24px;
+}
+
+.input-list ul li{
+    margin: 20px 0;
+}
+
+.input-list ul li p:last-of-type{
+    color: gray;
+    font-weight: normal;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.input-list ul li:last-of-type p:last-of-type{
+    height: 173px;
+}
+
+.approve::before{
+    content: '';
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid #000;
+}
+
+.submit{
+    width: 350px;
+    background: #aa0601;
+    text-align: center;
+    padding: 16px 0;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.footer{
+    background: #aa0601;
+    padding-top: 45px;
+    padding-bottom: 40px;
+}
+
+.footer-content{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list ul{
+    width: 464px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list:nth-child(2) ul{
+    width: 208px;
+}
+
+.menu-list ul li a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.contact{
+    font-size: 36px;
+    line-height: 1.3;
+    margin-top: 36px;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #fff
+}
+
+.contact ul li:first-of-type{
+    margin-bottom: 16px;
+}
+
+.contact ul li:nth-child(1)::before{
+    content: '';
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    margin-right: 22px;
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-phone.svg) no-repeat;
+}
+
+.contact ul li:nth-child(2)::before{
+    content: '';
+    height: 45px;
+    width: 47px;
+    display: inline-block;
+    margin-right: 22px;
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-mail.svg) no-repeat;
+}
+
+.privacy-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.privacy ul{
+    display: flex;
+}
+
+.privacy ul li:nth-child(2){
+    padding-left: 48px;
+}
+
+.privacy ul li a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+
+
