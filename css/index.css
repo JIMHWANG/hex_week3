@@ -55,6 +55,11 @@ a{
     text-decoration: none;
 }
 
+img{
+    max-width:100%;
+    height:auto;
+}
+
 .color-w{
     color: white;
 }
@@ -147,12 +152,11 @@ a{
 }
 
 .promise ul li{
-    width: 255px;
+    max-width: 255px;
     text-align: center;
 }
 
 .promise ul li img{
-    width: 88px;
     height: 88px;
 }
 
@@ -168,23 +172,32 @@ a{
     color: black;
 }
 
+@media (max-width:768px) {
+    .promise ul{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+    
+    .promise ul li:nth-child(n+3){
+        margin-top: 32px;
+    }
+}
+
 .classic{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .classic h2{
     margin-bottom: 40px;
 }
 
-.classic ul li{
-    width: 1100px;
-    margin: 0 auto;
-}
-
 .classic ul li a{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .classic ul li:nth-of-type(2) a{
@@ -198,11 +211,22 @@ a{
 }
 
 .classic ul li a p{
+    display: flex;
+    align-items: center;
     font-size: 48px;
     line-height: 1.3;
     color: #AA0601;
     font-style: italic;
     margin: 0 35px;
+}
+
+.classic ul li:nth-child(1) a p::before{
+    content: '';
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    margin-right: 8px;
+    background: url(https://upload.cc/i1/2021/07/18/x4XuPO.png) no-repeat;
 }
 
 .classic ul li:nth-child(2) a p::before{
@@ -221,6 +245,29 @@ a{
     display: inline-block;
     margin-right: 8px;
     background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-thunder.svg) no-repeat;
+}
+
+@media (max-width:768px){
+    .classic{
+        padding: 0 35px;
+    }
+
+    .classic ul li:nth-of-type(2) a{
+        flex-direction: row;
+        font-size: 50px;        
+    }
+
+    .classic ul li a{
+        max-width: 65%;
+    }
+
+    .classic ul li a p{
+        font-size: 28px;
+    }
+
+    .classic h2{
+        margin-top: 40px;
+    }
 }
 
 .co-branding{
@@ -273,7 +320,7 @@ a{
 }
 
 .customer-recommend ul li{
-    width: 255px;
+    max-width: 255px;
     line-height: 1.5;
     border-radius: 4px;
     box-shadow: 0px 2px 6px #00000029;
@@ -285,7 +332,6 @@ a{
 }
 
 .customer-recommend ul li img{
-    width: 255px;
     height: 255px;
 }
 
@@ -296,13 +342,35 @@ a{
     margin-top: 52px;
 }
 
+@media (max-width:768px){
+
+    .customer-recommend ul{
+        flex-wrap: wrap;
+        width: 95%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .customer-recommend ul li{
+        max-width: 300px;
+    }
+
+    .customer-recommend ul li:nth-child(n+3){
+        margin-top: 32px;
+    }
+
+    .recommend h2{
+        margin-bottom: 40px;
+    }
+}
+
 
 .contact-our{
     background: #FBF2F2;
 }
 
 .contact-list{
-    width: 730px;
+    max-width: 730px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -352,6 +420,16 @@ a{
     margin-top: 40px;
 }
 
+@media (max-width:768px){
+    .contact-list{
+        max-width: 450px;
+    }
+
+    .submit{
+        width: 200px;
+    }
+}
+
 .footer{
     background: #aa0601;
     padding-top: 45px;
@@ -359,7 +437,7 @@ a{
 }
 
 .footer-content{
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
 }
 
@@ -370,13 +448,13 @@ a{
 }
 
 .menu-list ul{
-    width: 464px;
+    max-width: 464px;
     display: flex;
     justify-content: space-between;
 }
 
 .menu-list:nth-child(2) ul{
-    width: 208px;
+    max-width: 208px;
 }
 
 .menu-list ul li a:hover{
@@ -431,6 +509,42 @@ a{
 .privacy ul li a:hover{
     color: black;
     font-weight: bold;
+}
+
+@media (max-width:768px){
+
+    .footer{
+        padding: 35px 48px;
+    }
+
+    .footer-menu{
+        justify-content: space-between;
+    }
+
+    .menu-list ul{
+        width: 800px;
+    }
+
+    .footer-menu .menu-list:nth-of-type(2) ul{
+        display: flex;
+        width: 100px;
+        justify-content: space-between;
+    }
+
+    .contact{
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .menu-list img{
+        width: 24px;
+        height: 24px;
+    }
+    
+    .h2-font-size{
+        font-size: 32px;
+        line-height: 1.4;
+    }
 }
 
 
